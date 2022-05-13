@@ -1,21 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
+
+#homepage-container {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Manrope', sans-serif
+}
+
 .header {
-  padding: .5em 1.5em 0 1.5em;
+  padding: 0.5em 1.5em 0 1.5em;
   width: 100vw;
   max-width: 100%;
   height: 35vh;
   background-image: url(../images/homepage/sunrise-road.jpg);
   background-size: cover;
   background-position: center;
+  
+}
+
+#erafleet-title-pic {
+  height: 1.1em;
+  margin-left: 3.2em;
 }
 
 .navbar {
   color: white;
   justify-content: space-between;
+  align-items: center;
 }
 
 .start-free-btn {
+  font-size: 0.5em;
+  font-weight: bold;
+  letter-spacing: 0.05em;
   align-self: center;
   height: fit-content;
   background: #ffd850;
   border-radius: 5px;
+  padding: 0.7em 2.5em 0.7em 2.5em;
+}
+
+.start-free-btn:hover {
+  background-color: #ffea9f;
+}
+
+#fleet-features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.5em;
+  font-size: 1.1em;
+  color: #ffffff;
+}
+
+.feature-list li{
+  display: flex;
+  font-size: 0.6em;
+  
+  margin-bottom: .8em;
+  margin-right: 2.5em;
+}
+
+#green-tick {
+  margin-right: 1em;
+}
+
+#iot-solutions {
+    margin-top: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#iot-solutions h3 {
+    width: 70%;
+    font-size: 1.2em;
+    font-weight: 800;
+}
+
+#iot-solutions span {
+    margin-top: 1em;;
+    width: 85%;
+    font-weight: 500;;
+}
+
+#iot-solutions-pics {
+    margin-top: 1em;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#iot-solutions-pics__cars-on-map {
+    position: absolute;
+    margin-left: 1em;
+    left: -5em;
+    height: 10em;
+    z-index: 1;
+}
+
+#iot-solutions-pics__steering {
+    position: relative;
+    height: 13em;
+    left: 4em;
 }
