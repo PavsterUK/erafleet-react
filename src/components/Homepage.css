@@ -1,42 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap");
 
 #homepage-container {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Manrope', sans-serif
+  display: flex;
+  flex-direction: column;
+  font-family: "Manrope", sans-serif;
 }
 
 .header {
-  padding: 0.5em 1.5em 0 1.5em;
-  width: 100vw;
+  padding: 0.5em 1.5em 1em 1.5em;
+  width: 100%;
   max-width: 100%;
-  height: 35vh;
+  height: fit-content;
   background-image: url(../images/homepage/sunrise-road.jpg);
   background-size: cover;
   background-position: center;
-  
+}
+
+#drawer-menu-pic {
+  height: clamp(0.5em, 4vw, 2em);
 }
 
 #erafleet-title-pic {
-  height: 1.1em;
+  height: clamp(0.5em, 4.5vw, 2em);
   margin-left: 3.2em;
 }
 
 .navbar {
+  display: flex;
   color: white;
   justify-content: space-between;
   align-items: center;
 }
 
 .start-free-btn {
-  font-size: 0.5em;
+  font-size: clamp(0.5em, 2.5vw, 1em);
   font-weight: bold;
-  letter-spacing: 0.05em;
   align-self: center;
   height: fit-content;
   background: #ffd850;
-  border-radius: 5px;
-  padding: 0.7em 2.5em 0.7em 2.5em;
+  border-radius: 10px;
+  padding: 0.8em 2em 0.8em 2em;
 }
 
 .start-free-btn:hover {
@@ -48,59 +51,132 @@
   flex-direction: column;
   align-items: center;
   margin-top: 1.5em;
-  font-size: 1.1em;
+  font-size: clamp(1em, 4.5vw, 2em);
   color: #ffffff;
 }
 
-.feature-list li{
+@media (min-width: 768px) {
+  #fleet-features {
+    align-items: flex-start;
+  }
+}
+
+.feature-list {
+  position: relative;
+  width: fit-content;
+  padding: 0;
+  margin: 0 0 0 2em;
+}
+
+.feature-list ul {
+  padding: 0;
+}
+
+.feature-list li {
   display: flex;
   font-size: 0.6em;
-  
-  margin-bottom: .8em;
+  margin-bottom: 0.8em;
   margin-right: 2.5em;
+  align-items: center;
 }
 
 #green-tick {
-  margin-right: 1em;
+  position: absolute;
+  left: -1.5em;
+  height: clamp(1em, 1vw, 1em);
 }
 
 #iot-solutions {
-    margin-top: 1.5em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-#iot-solutions h3 {
-    width: 70%;
-    font-size: 1.2em;
-    font-weight: 800;
+.section-title {
+  margin-top: 1.5em;
+  text-align: center;
+  width: 70%;
+  font-size: clamp(0.5em, 5vw, 2em);
+  font-weight: 800;
+  text-transform: capitalize;
 }
 
 #iot-solutions span {
-    margin-top: 1em;;
-    width: 85%;
-    font-weight: 500;;
+  margin-top: 1em;
+  width: 85%;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: clamp(0.5em, 4vw, 2em);
 }
 
 #iot-solutions-pics {
-    margin-top: 1em;
-    position: relative;
-    display: flex;
-    align-items: center;
+  margin-top: 1em;
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
 #iot-solutions-pics__cars-on-map {
-    position: absolute;
-    margin-left: 1em;
-    left: -5em;
-    height: 10em;
-    z-index: 1;
+  position: absolute;
+  margin-left: 1em;
+  left: -5em;
+  height: 10em;
+  z-index: 1;
 }
 
 #iot-solutions-pics__steering {
-    position: relative;
-    height: 13em;
-    left: 4em;
+  position: relative;
+  height: 13em;
+  left: 4em;
+}
+
+#flexible-pricing-plan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.yellow-rectangle {
+  margin: 1em 0 1.5em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: clamp(2em, 25vw, 8em);
+  height: clamp(2em, 25vw, 8em);
+  border-radius: 5%;
+  background-color: #ffd850;
+}
+
+#flexible-pricing-plan span {
+    font-size: clamp(.5em, 4.5vw, 1.5em);
+    color: #64607D;
+}
+
+#per-day-connect {
+    margin: 1em 0 1em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#per-day-connect span {
+    text-align: center;
+    width: 85%;
+    font-size: clamp(.5em, 5vw, 1.5em);
+    color: #64607D;
+}
+
+.register-now-btn {
+    margin-top: 1em;;
+    font-weight: bold;
+    color: white;
+    background: #4F46BA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8em 0 0.5em 0;
+    border-radius: 10px;
+    font-size: clamp(.5em, 5vw, 1.5em);
+    width: 80%;
 }
