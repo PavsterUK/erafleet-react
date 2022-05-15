@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 
 #homepage-container {
-  display: flex;
-  flex-direction: column;
   font-family: "Manrope", sans-serif;
 }
 
@@ -30,6 +30,7 @@
   color: white;
   justify-content: space-between;
   align-items: center;
+  margin-top: 0.5em;
 }
 
 .start-free-btn {
@@ -38,7 +39,8 @@
   align-self: center;
   height: fit-content;
   background: #ffd850;
-  border-radius: 10px;
+  border-radius: 7px;
+  border: none;
   padding: 0.8em 2em 0.8em 2em;
 }
 
@@ -47,12 +49,19 @@
 }
 
 #fleet-features {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 1.5em;
-  font-size: clamp(1em, 4.5vw, 2em);
   color: #ffffff;
+  margin-top: clamp(1em, 5vw, 3em);
+  margin-bottom: clamp(1em, 7vw, 3em);
+}
+
+#fleet-features span {
+  font-size: clamp(1em, 3vw, 2em);
+}
+
+#fleet-features h2 {
+  font-size: clamp(1em, 6.5vw, 3em);
+  font-weight: 800;
+  letter-spacing: -0.03em;
 }
 
 @media (min-width: 768px) {
@@ -74,9 +83,8 @@
 
 .feature-list li {
   display: flex;
-  font-size: 0.6em;
-  margin-bottom: 0.8em;
-  margin-right: 2.5em;
+  font-size: clamp(0.5em, 3vw, 2em);
+  margin-bottom: 0.7em;
   align-items: center;
 }
 
@@ -86,97 +94,254 @@
   height: clamp(1em, 1vw, 1em);
 }
 
-#iot-solutions {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
 .section-title {
-  margin-top: 1.5em;
-  text-align: center;
-  width: 70%;
-  font-size: clamp(0.5em, 5vw, 2em);
+  font-size: clamp(0.5em, 5.3vw, 2em);
   font-weight: 800;
   text-transform: capitalize;
+  margin: 1em 0 1em 0;
+}
+
+.section-title-large {
+  font-weight: 700;
+  font-size: clamp(0.5em, 5vw, 2em);
+}
+
+#iot-solutions h3 {
+  width: 80%;
+  margin: 1em 0 1em 0;
 }
 
 #iot-solutions span {
-  margin-top: 1em;
-  width: 85%;
+  width: 90%;
   font-weight: 500;
   text-transform: capitalize;
-  font-size: clamp(0.5em, 4vw, 2em);
+  font-size: clamp(0.5em, 3.8vw, 2em);
+  margin-bottom: 2.2em;
 }
 
 #iot-solutions-pics {
-  margin-top: 1em;
+  width: 85%;
   position: relative;
-  display: flex;
-  align-items: center;
+  margin: 1em 1em 1em 0;
 }
 
 #iot-solutions-pics__cars-on-map {
-  position: absolute;
-  margin-left: 1em;
-  left: -5em;
-  height: 10em;
+  position: relative;
+  height: clamp(10vw, 40vw, 70vw);
+  left: 1em;
   z-index: 1;
 }
 
 #iot-solutions-pics__steering {
   position: relative;
-  height: 13em;
-  left: 4em;
-}
-
-#flexible-pricing-plan {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  height: clamp(10vw, 55vw, 70vw);
+  z-index: 0;
 }
 
 .yellow-rectangle {
-  margin: 1em 0 1.5em 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: clamp(2em, 25vw, 8em);
   height: clamp(2em, 25vw, 8em);
   border-radius: 5%;
   background-color: #ffd850;
 }
 
+#flexible-pricing-plan h4 {
+  margin: 1.5em 0 1.5em 0;
+}
+
 #flexible-pricing-plan span {
-    font-size: clamp(.5em, 4.5vw, 1.5em);
-    color: #64607D;
+  font-size: clamp(0.5em, 4.5vw, 1.5em);
+  color: #64607d;
 }
 
-#per-day-connect {
-    margin: 1em 0 1em 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#cards {
+  margin-bottom: 1em;
 }
 
-#per-day-connect span {
-    text-align: center;
-    width: 85%;
-    font-size: clamp(.5em, 5vw, 1.5em);
-    color: #64607D;
+.card h3 {
+  font-size: clamp(0.5em, 6vw, 1.5em);
+}
+
+.card span {
+  width: 85%;
+  font-size: clamp(0.5em, 5vw, 1.5em);
+  color: #64607d;
 }
 
 .register-now-btn {
-    margin-top: 1em;;
-    font-weight: bold;
-    color: white;
-    background: #4F46BA;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: .8em 0 0.5em 0;
-    border-radius: 10px;
-    font-size: clamp(.5em, 5vw, 1.5em);
-    width: 80%;
+  border: none;
+  font-weight: bold;
+  color: white;
+  background: #4f46ba;
+  padding: 0.7em 0 0.7em 0;
+  border-radius: 10px;
+  font-size: clamp(0.5em, 5vw, 1.5em);
+  width: 90%;
+  margin: 1em 0 1em 0;
+}
+
+.yellow-bg {
+  color: black;
+  background-color: #ffd850;
+}
+
+#purple-bg {
+  background-color: #3734a9;
+  color: white;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding-top: 2em;
+}
+
+#purple-bg h2 {
+  font-size: clamp(0.5em, 6vw, 2.5em);
+  margin: 0;
+  width: 85%;
+  font-weight: 500;
+}
+
+#purple-bg h3 {
+  width: 85%;
+  font-size: clamp(0.5em, 6.5vw, 2.5em);
+  margin: 0.5em 0 0.5em 0;
+}
+
+#purple-bg h4 {
+  width: 70%;
+  margin-bottom: 1em;
+}
+
+#purple-bg span {
+  font-size: clamp(0.5em, 5.7vw, 2.5em);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  margin: 1em 1em;
+}
+
+.yellow-circle {
+  margin-top: 0.5em;
+  padding: clamp(1em, 25vw, 3em);
+  border-radius: 50%;
+  background-color: #ffd850;
+  height: clamp(1em, 8vw, 5em);
+  width: clamp(1em, 8vw, 5em);
+}
+
+.yellow-circle h1 {
+  color: #3734a9;
+  font-size: clamp(1em, 13vw, 5em);
+  font-weight: 700;
+}
+
+#yelow-bg-rect {
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+  background-color: #ffd850;
+}
+
+#phone-in-hand-pic {
+  position: relative;
+  left: -1em;
+  top: -1em;
+}
+
+#erafleet {
+  margin-top: 2em;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#erafleet h2 {
+  font-family: "Roboto";
+  font-size: clamp(0.5em, 6vw, 3em);
+  font-weight: 400;
+}
+
+#erafleet span {
+  font-size: clamp(0.5em, 4.4vw, 3em);
+  font-weight: 400;
+  margin-bottom: 1em;
+}
+
+.quick-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.quick-menu ul {
+  font-size: clamp(0.5em, 4.5vw, 3em);
+  font-weight: 400;
+  color: #757575;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.quick-menu h3 {
+  font-size: clamp(0.5em, 5vw, 3em);
+}
+
+.quick-menu span {
+  font-size: clamp(0.5em, 4.4vw, 3em);
+  font-weight: 400;
+  color: #757575;
+}
+
+#mail,
+#phone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #3734a9;
+}
+
+#mail h3,
+#phone h3 {
+  margin-top: 0.5em;
+  font-weight: 500;
+}
+
+#phone {
+  margin: 1em 0 1em 0;
+}
+
+#phone-pic {
+  width: clamp(0.5em, 7vw, 3em);
+}
+
+#mail-pic {
+  width: fit-content;
+  height: fit-content;
+}
+
+#top-env {
+  width: clamp(0.5em, 8vw, 3em);
+  margin-bottom: clamp(-0.5em, -15vw, -5em);
+}
+
+#bott-env {
+  width: clamp(0.5em, 8vw, 3em);
+  margin-top: clamp(-0.5em, -15vw, -5em);
+}
+
+#city-silouete-pics {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: 5em;
+  height: clamp(0.5em, 20vw, 50vw);
+}
+
+footer {
+  font-family: "Poppins", sans-serif;
+  padding: 0.8em;
+  width: 100%;
+  color: #F2F3FF;
+  background: #000000;
 }
