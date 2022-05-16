@@ -7,7 +7,10 @@
 }
 
 .header {
-  padding: 0.5em 1.5em 1em 1.5em;
+  padding-top: clamp(0.5em, 2vw, 3em);
+  padding-bottom: clamp(0.5em, 2vw, 3em);
+  padding-left: clamp(0.5em, 9vw, 5em);
+  padding-right: clamp(0.5em, 9vw, 5em);
   width: 100%;
   max-width: 100%;
   height: fit-content;
@@ -20,9 +23,20 @@
   height: clamp(0.5em, 4vw, 2em);
 }
 
+@media (min-width: 1280px) {
+  #drawer-menu-pic {
+    display: none;
+  }
+}
+
 #erafleet-title-pic {
-  height: clamp(0.5em, 4.5vw, 2em);
+  height: clamp(4.5vw, 4.5vw, 1.5em);
   margin-left: 3.2em;
+}
+@media (min-width: 500px) {
+  #erafleet-title-pic {
+    height: clamp(1.5em, 2vw, 1.5em);
+  }
 }
 
 .navbar {
@@ -33,15 +47,45 @@
   margin-top: 0.5em;
 }
 
+.navbar ul,
+.navbar a {
+  display: none;
+}
+
+@media (min-width: 1280px) {
+  .navbar ul {
+    display: flex;
+    list-style: none;
+  }
+  .navbar li {
+    margin-right: 1em;
+  }
+  .navbar a {
+    display: inline-block;
+  }
+}
+
+.navbar a {
+  font-weight: 500;
+  font-size: clamp(0.5em, 1.5vw, 2em);
+  margin-right: 1.5em;
+}
+
 .start-free-btn {
-  font-size: clamp(0.5em, 2.5vw, 1em);
-  font-weight: bold;
-  align-self: center;
-  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(0.5em, 13.3vw, 13em);
+  min-width: 8em;
+  min-height: 2.5em;
+  height: clamp(0.5em, 3.5vw, 13em);
+  max-height: 60px;
+  font-size: clamp(0.5em, 2.5vw, 1.2em);
+  font-weight: 600;
   background: #ffd850;
-  border-radius: 7px;
+  border-radius: 0.8vw;
   border: none;
-  padding: 0.8em 2em 0.8em 2em;
+  margin-left: 1em;
 }
 
 .start-free-btn:hover {
@@ -55,11 +99,11 @@
 }
 
 #fleet-features span {
-  font-size: clamp(1em, 3vw, 2em);
+  font-size: clamp(0.5em, 3vw, 0.9em);
 }
 
 #fleet-features h2 {
-  font-size: clamp(1em, 6.5vw, 3em);
+  font-size: clamp(1em, 6.5vw, 3.8em);
   font-weight: 800;
   letter-spacing: -0.03em;
 }
@@ -67,6 +111,10 @@
 @media (min-width: 768px) {
   #fleet-features {
     align-items: flex-start;
+    margin-left: 4.5em;
+  }
+  #fleet-features h2 {
+    margin-bottom: clamp(0.1em, 1vw, 1em);
   }
 }
 
@@ -106,6 +154,19 @@
   font-size: clamp(0.5em, 5vw, 2em);
 }
 
+@media (min-width: 768px) {
+  #iot-solutions {
+    flex-direction: row;
+  }
+}
+
+#iot-solutions-paragraph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 #iot-solutions h3 {
   width: 80%;
   margin: 1em 0 1em 0;
@@ -136,6 +197,44 @@
   position: relative;
   height: clamp(10vw, 55vw, 70vw);
   z-index: 0;
+}
+
+@media (min-width: 1280px) {
+  #iot-solutions-paragraph {
+    border: 1px solid red;
+    align-items: flex-start;
+    margin-left: 1.5em;
+  }
+
+  #iot-solutions span {
+    text-align: left;
+    font-size: clamp(0.5em, 1.3vw, 2em) !important;
+  }
+
+  #iot-solutions h3 {
+    text-align: left;
+    width: 80%;
+    margin: 1em 0 1em 0;
+  }
+
+  #iot-solutions-pics {
+    width: 85%;
+    position: relative;
+
+  }
+
+  #iot-solutions-pics__cars-on-map {
+    position: relative;
+    height: clamp(10vw, 10vw, 70vw);
+    left: 1em;
+    z-index: 1;
+  }
+
+  #iot-solutions-pics__steering {
+    position: relative;
+    height: clamp(10vw, 25vw, 70vw);
+    z-index: 0;
+  }
 }
 
 .yellow-rectangle {
@@ -220,7 +319,7 @@
 
 .yellow-circle {
   margin-top: 0.5em;
-  padding: clamp(1em, 25vw, 3em);
+  padding: clamp(1em, 25vw, 5em);
   border-radius: 50%;
   background-color: #ffd850;
   height: clamp(1em, 8vw, 5em);
@@ -342,6 +441,6 @@ footer {
   font-family: "Poppins", sans-serif;
   padding: 0.8em;
   width: 100%;
-  color: #F2F3FF;
+  color: #f2f3ff;
   background: #000000;
 }

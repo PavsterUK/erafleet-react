@@ -22,7 +22,24 @@ const homepage = () => {
         <div className="navbar">
           <img id="drawer-menu-pic" src={DrawerMenuPic} />
           <img id="erafleet-title-pic" src={ErafleetTitlePic} />
-          <button className="start-free-btn">Start Free</button>
+          <ul>
+            <li>
+              <a style={{ color: "#FFD850" }}>Home</a>
+            </li>
+            <li>
+              <a>Features</a>
+            </li>
+            <li>
+              <a>Price</a>
+            </li>
+            <li>
+              <a>Contact us</a>
+            </li>
+          </ul>
+          <div className="flex-row-center">
+            <a>Sign in</a>
+            <button className="start-free-btn">Start Free</button>
+          </div>
         </div>
         <section id="fleet-features" className="flex-column-center">
           <div className="feature-list">
@@ -53,18 +70,21 @@ const homepage = () => {
         </section>
       </div>
       <section id="iot-solutions" className="flex-column-center text-center">
-        <h3 className="section-title text-center">
-          IoT Solutions For Optimised Vehicle Operations
-        </h3>
-        <span>
-          Individuals and businesses of various sizes operating in logistics,
-          insurance, car hire and other transport related sectors can benefit
-          from our user-friendly tracking dashboard fed by GPS tracking devices
-          and telematic control units of their choice. <br />
-          <br />
-          Enhanced vehicle tracking allows reduced operational costs, improved
-          business agility, vehicle maintenance and employee safety.
-        </span>
+        <div id="iot-solutions-paragraph">
+          <h3 className="section-title text-center">
+            IoT Solutions For Optimised Vehicle Operations
+          </h3>
+          <span id="iot-solutions-paragraph-span">
+            Individuals and businesses of various sizes operating in logistics,
+            insurance, car hire and other transport related sectors can benefit
+            from our user-friendly tracking dashboard fed by GPS tracking
+            devices and telematic control units of their choice. <br />
+            <br />
+            Enhanced vehicle tracking allows reduced operational costs, improved
+            business agility, vehicle maintenance and employee safety.
+          </span>
+        </div>
+
         <div id="iot-solutions-pics" className="flex-row-center">
           <img id="iot-solutions-pics__cars-on-map" src={CarsOnMapPic} />
           <img id="iot-solutions-pics__steering" src={SteeringPic} />
