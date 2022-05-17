@@ -146,39 +146,41 @@ const homepage = () => {
           by generating customizable fleet reports and analytics.
         </h3>
         <div className="flex-column-center">
-          <div className="yellow-circle flex-row-center">
-            <h1>1</h1>
+          <div className="flex-column-center">
+            <div className="yellow-circle flex-row-center">
+              <h1>1</h1>
+            </div>
+            <h3 className="section-title-large text-center">
+              Ready to Optimise Your Vehicle Operations?
+            </h3>
+            <h4 className="h4-light-grey seventy-percent-wide">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </h4>
           </div>
-          <h3 className="section-title-large text-center">
-            Ready to Optimise Your Vehicle Operations?
-          </h3>
-          <h4 className="h4-light-grey seventy-percent-wide">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit
-          </h4>
-        </div>
 
-        <div className="flex-column-center">
-          <div className="yellow-circle flex-row-center">
-            <h1>2</h1>
+          <div className="flex-column-center">
+            <div className="yellow-circle flex-row-center">
+              <h1>2</h1>
+            </div>
+            <h3 className="section-title-large text-center">
+              Ready to Start Tracking?
+            </h3>
+            <h4 className="h4-light-grey wd-70">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </h4>
           </div>
-          <h3 className="section-title-large text-center">
-            Ready to Start Tracking?
-          </h3>
-          <h4 className="h4-light-grey wd-70">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit
-          </h4>
-        </div>
 
-        <div className="flex-column-center">
-          <div className="yellow-circle flex-row-center">
-            <h1>3</h1>
+          <div className="flex-column-center">
+            <div className="yellow-circle flex-row-center">
+              <h1>3</h1>
+            </div>
+            <h3 className="section-title-large text-center">
+              Ready to Start Tracking &amp; Optimising Your Vehicle Operations?
+            </h3>
+            <h4 className="h4-light-grey wd-70">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </h4>
           </div>
-          <h3 className="section-title-large text-center">
-            Ready to Start Tracking &amp; Optimising Your Vehicle Operations?
-          </h3>
-          <h4 className="h4-light-grey wd-70">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit
-          </h4>
         </div>
 
         <div id="yelow-bg-rect">
@@ -250,8 +252,8 @@ const homepage = () => {
         </div>
       </section>
       <div id="city-silouete-pics">
-        <img src={CityLeftPic} />
         <img src={CityRightPic} />
+        <img src={CityLeftPic} />
       </div>
       <footer className="text-center">
         <span>© Erafleet 2022. All rights reserved.</span>
