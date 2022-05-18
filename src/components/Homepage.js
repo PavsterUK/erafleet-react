@@ -17,7 +17,7 @@ import CityRightPic from "../images/homepage/city-right.svg";
 
 const homepage = () => {
   return (
-    <div id="homepage-container" className="flex-column-center">
+    <div id="homepage-container">
       <div className="header">
         <div className="navbar">
           <img id="drawer-menu-pic" src={DrawerMenuPic} />
@@ -36,12 +36,12 @@ const homepage = () => {
               <a>Contact us</a>
             </li>
           </ul>
-          <div className="flex-row-center">
+          <div>
             <a>Sign in</a>
             <button className="start-free-btn">Start Free</button>
           </div>
         </div>
-        <section id="fleet-features" className="flex-column-center">
+        <section id="fleet-features-section">
           <div className="feature-list">
             <h2>Fleet Features</h2>
             <ul>
@@ -69,12 +69,12 @@ const homepage = () => {
           </div>
         </section>
       </div>
-      <section id="iot-solutions" className="flex-column-center text-center">
-        <div id="iot-solutions-paragraph">
-          <h3 className="section-title text-center">
+      <section id="iot-solutions-section">
+        <div id="iot-solutions-text-wrapper">
+          <h3 className="section-title">
             IoT Solutions For Optimised Vehicle Operations
           </h3>
-          <span id="iot-solutions-paragraph-span">
+          <span id="iot-solutions-paragraph">
             Individuals and businesses of various sizes operating in logistics,
             insurance, car hire and other transport related sectors can benefit
             from our user-friendly tracking dashboard fed by GPS tracking
@@ -85,53 +85,48 @@ const homepage = () => {
           </span>
         </div>
 
-        <div id="iot-solutions-pics" className="flex-row-center">
+        <div id="iot-solutions-pics">
           <img id="iot-solutions-pics__cars-on-map" src={CarsOnMapPic} />
           <img id="iot-solutions-pics__steering" src={SteeringPic} />
         </div>
       </section>
-      <section
-        id="flexible-pricing-plan"
-        className="flex-column-center text-center"
-      >
-        <h3 className="section-title ">flexible pricing plan</h3>
-        <div className="yellow-rectangle flex-row-center">
+      <section id="flexible-pricing-plan-section">
+        <h3>flexible pricing plan</h3>
+        <div className="yellow-rectangle ">
           <img src={ShieldPic} />
         </div>
-        <h4 className="h4-grey">Lorem ipsum dolor sit consectetur </h4>
-        <div className="yellow-rectangle flex-row-center">
+        <h4>Lorem ipsum dolor sit consectetur </h4>
+        <div className="yellow-rectangle ">
           <img src={TrackedCarPic} />
         </div>
-        <h4 className="h4-grey">Lorem ipsum dolor sit consectetur </h4>
-        <div className="yellow-rectangle flex-row-center">
+        <h4>Lorem ipsum dolor sit consectetur </h4>
+        <div className="yellow-rectangle ">
           <img src={ArrivedAtLocationPic} />
         </div>
-        <h4 className="h4-grey">Lorem ipsum dolor sit consectetur </h4>
+        <h4>Lorem ipsum dolor sit consectetur </h4>
       </section>
-      <section id="cards">
-        <div className="card flex-column-center">
-          <h3 className="section-title text-center">per day connect</h3>
+      <section id="products-cards-section">
+        <div className="product-card">
+          <h3>per day connect</h3>
           <span className="text-center">
             €0.16 per connected device/1-day from the 3rd month
           </span>
           <br />
-          <span className="text-center">
+          <span>
             2 months of free service for an unlimited number of devices
             <br />
             <b>Cancel at Anytime</b>
           </span>
-          <button className="register-now-btn flex-row-center">
-            Register Now
-          </button>
+          <button className="register-now-btn">Register Now</button>
         </div>
 
-        <div className="card flex-column-center">
-          <h3 className="section-title text-center">Monthly Cap</h3>
+        <div className="product-card">
+          <h3>Monthly Cap</h3>
           <span className="text-center">
             Monthly cap – €4.00 per connected device
           </span>
           <br />
-          <span className="text-center">
+          <span>
             2 months of free service for an unlimited number of devices
             <br />
             <b>Cancel at Anytime</b>
@@ -139,42 +134,42 @@ const homepage = () => {
           <button className="register-now-btn">Register Now</button>
         </div>
       </section>
-      <section id="purple-bg" className="flex-column-center text-center">
-        <h3 className="h3-500 capt">
+      <section id="purple-bg">
+        <h3>
           Accelerate your business through cost-effective automated GPS-powered
           monitoring of every vehicle in your fleet. Make data-driven decisions
           by generating customizable fleet reports and analytics.
         </h3>
-        <div className="flex-column-center">
-          <div className="flex-column-center">
-            <div className="yellow-circle flex-row-center">
+        <div>
+          <div>
+            <div className="yellow-circle ">
               <h1>1</h1>
             </div>
-            <h3 className="section-title-large text-center">
+            <h3>
               Ready to Optimise Your Vehicle Operations?
             </h3>
-            <h4 className="h4-light-grey seventy-percent-wide">
+            <h4>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit
             </h4>
           </div>
 
-          <div className="flex-column-center">
-            <div className="yellow-circle flex-row-center">
+          <div>
+            <div className="yellow-circle">
               <h1>2</h1>
             </div>
-            <h3 className="section-title-large text-center">
+            <h3>
               Ready to Start Tracking?
             </h3>
-            <h4 className="h4-light-grey wd-70">
+            <h4>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit
             </h4>
           </div>
 
-          <div className="flex-column-center">
-            <div className="yellow-circle flex-row-center">
+          <div>
+            <div className="yellow-circle">
               <h1>3</h1>
             </div>
-            <h3 className="section-title-large text-center">
+            <h3>
               Ready to Start Tracking &amp; Optimising Your Vehicle Operations?
             </h3>
             <h4 className="h4-light-grey wd-70">
@@ -190,9 +185,7 @@ const homepage = () => {
           Join our platform today and benefit from 2 months of free service for
           an unlimited number of devices.
         </span>
-        <button className="register-now-btn yellow-bg flex-row-center">
-          Register Now
-        </button>
+        <button className="register-now-btn yellow-bg">Register Now</button>
         <span className="wd-90 capt">
           Connect with us to receive a special offer tailored to your business
           needs.

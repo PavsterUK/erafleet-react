@@ -3,7 +3,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 
 #homepage-container {
-  font-family: "Manrope", sans-serif;
+  display: flex;
+  flex-direction: column;
+  font-family: "Manrope";
 }
 
 .header {
@@ -92,28 +94,34 @@
   background-color: #ffea9f;
 }
 
-#fleet-features {
+#fleet-features-section {
+  display: flex;
+  flex-direction: column;
   color: #ffffff;
   margin-top: clamp(1em, 5vw, 3em);
   margin-bottom: clamp(1em, 7vw, 3em);
 }
 
-#fleet-features span {
+.feature-list {
+  align-self: center;
+}
+
+#fleet-features-section span {
   font-size: clamp(0.5em, 3vw, 0.9em);
 }
 
-#fleet-features h2 {
+#fleet-features-section h2 {
   font-size: clamp(1em, 6.5vw, 3.8em);
   font-weight: 800;
   letter-spacing: -0.03em;
 }
 
 @media (min-width: 768px) {
-  #fleet-features {
-    align-items: flex-start;
+  #fleet-features-section {
+    flex-direction: row;
     margin-left: 4.5em;
   }
-  #fleet-features h2 {
+  #fleet-features-section h2 {
     margin-bottom: clamp(0.1em, 1vw, 1em);
   }
 }
@@ -123,6 +131,7 @@
   width: fit-content;
   padding: 0;
   margin: 0 0 0 2em;
+  align-self: center;
 }
 
 .feature-list ul {
@@ -154,43 +163,41 @@
   font-size: clamp(0.5em, 5vw, 2em);
 }
 
-#iot-solutions-paragraph {
+#iot-solutions-section {
+  padding-left: 8.5%;
+  padding-right: 9%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
-#iot-solutions h3 {
-  width: 80%;
-  margin: 1em 0 1em 0;
-}
-
-#iot-solutions span {
-  width: 90%;
-  font-weight: 500;
+#iot-solutions-text-wrapper {
+  text-align: center;
   text-transform: capitalize;
-  font-size: clamp(0.5em, 3.8vw, 2em);
-  margin-bottom: 2.2em;
+}
+
+#iot-solutions-paragraph {
+  font-size: clamp(0.5em, 3.5vw, 2em);
+  font-weight: 500;
+  line-height: clamp(0.5em, 4.2vw, 2em);
 }
 
 #iot-solutions-pics {
-  width: 85%;
-  position: relative;
+  display: flex;
+  align-items: center;
+  width: fit-content;
   margin: 1em 1em 1em 0;
+  padding-left: 0.5em;
 }
 
 #iot-solutions-pics__cars-on-map {
-  position: relative;
   height: clamp(10vw, 40vw, 70vw);
-  left: 1em;
   z-index: 1;
 }
 
 #iot-solutions-pics__steering {
   position: relative;
+  right: 1em;
   height: clamp(10vw, 55vw, 70vw);
-  z-index: 0;
 }
 
 @media (min-width: 1280px) {
@@ -241,7 +248,26 @@
   }
 }
 
-#flexible-pricing-plan h4 {
+#flexible-pricing-plan-section {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#flexible-pricing-plan-section h3 {
+  font-size: clamp(0.5em, 5.3vw, 2em);
+  font-weight: 800;
+  text-transform: capitalize;
+  margin: 1em 0 1em 0;
+  letter-spacing: -0.03em;
+}
+
+#flexible-pricing-plan-section h4 {
+  font-size: clamp(0.5em, 4.5vw, 1.5em);
+  color: #64607d;
+  letter-spacing: -0.02em;
+  font-weight: 500;
   margin: 1.5em 0 1.5em 0;
 }
 
@@ -250,22 +276,34 @@
   height: clamp(2em, 25vw, 8em);
   border-radius: 5%;
   background-color: #ffd850;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#flexible-pricing-plan span {
-  font-size: clamp(0.5em, 4.5vw, 1.5em);
-  color: #64607d;
-}
-
-#cards {
+#products-cards-section {
+  border: 1px solid red;
+  padding-left: 8.5%;
+  padding-right: 9%;
   margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.card h3 {
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.product-card h3 {
   font-size: clamp(0.5em, 6vw, 1.5em);
 }
 
-.card span {
+.product-card span {
   width: 85%;
   font-size: clamp(0.5em, 5vw, 1.5em);
   color: #64607d;
@@ -289,7 +327,7 @@
 }
 
 @media (min-width: 1280px) {
-  #flexible-pricing-plan {
+  #flexible-pricing-plan-section {
     margin-top: clamp(0.5em, 3vw, 2.5em);
     margin-left: clamp(2em, 10vw, 10em);
     margin-right: clamp(2em, 3vw, 10em);
@@ -297,17 +335,18 @@
     padding-bottom: clamp(1em, 1vw, 4em);
     padding-left: clamp(1em, 2.5vw, 4em);
     flex-direction: row;
+    justify-self: start;
     border: 1px solid #dee1e6;
     border-radius: 10px;
   }
 
-  #flexible-pricing-plan h3 {
+  #flexible-pricing-plan-section h3 {
     letter-spacing: -0.03em;
     white-space: nowrap;
     margin-right: clamp(1em, 2vw, 10em);
   }
 
-  #flexible-pricing-plan h4 {
+  #flexible-pricing-plan-section h4 {
     letter-spacing: -0.02em;
     font-size: clamp(0.1em, 1.3vw, 1.3em);
     text-align: left;
@@ -321,7 +360,7 @@
     background-color: #ffd850;
   }
 
-  #flexible-pricing-plan img {
+  #flexible-pricing-plan-section img {
     height: clamp(0.2em, 2vw, 5em);
   }
 }
@@ -332,7 +371,7 @@
   }
 
   .card {
-      margin: 1em 0.5em 0 .5em;
+    margin: 1em 0.5em 0 0.5em;
     box-shadow: 0px 141.825px 113.46px rgba(0, 0, 0, 0.03),
       0px 91.9235px 66.4476px rgba(0, 0, 0, 0.0227778),
       0px 54.6288px 36.1391px rgba(0, 0, 0, 0.0182222),
