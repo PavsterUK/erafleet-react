@@ -25,20 +25,9 @@
   height: clamp(0.5em, 4vw, 2em);
 }
 
-@media (min-width: 1280px) {
-  #drawer-menu-pic {
-    display: none;
-  }
-}
-
 #erafleet-title-pic {
   height: clamp(4.5vw, 4.5vw, 1.5em);
   margin-left: 3.2em;
-}
-@media (min-width: 500px) {
-  #erafleet-title-pic {
-    height: clamp(1.5em, 2vw, 1.5em);
-  }
 }
 
 .navbar {
@@ -52,19 +41,6 @@
 .navbar ul,
 .navbar a {
   display: none;
-}
-
-@media (min-width: 1280px) {
-  .navbar ul {
-    display: flex;
-    list-style: none;
-  }
-  .navbar li {
-    margin-right: 1em;
-  }
-  .navbar a {
-    display: inline-block;
-  }
 }
 
 .navbar a {
@@ -114,16 +90,6 @@
   font-size: clamp(1em, 6.5vw, 3.8em);
   font-weight: 800;
   letter-spacing: -0.03em;
-}
-
-@media (min-width: 768px) {
-  #fleet-features-section {
-    flex-direction: row;
-    margin-left: 4.5em;
-  }
-  #fleet-features-section h2 {
-    margin-bottom: clamp(0.1em, 1vw, 1em);
-  }
 }
 
 .feature-list {
@@ -200,7 +166,410 @@
   height: clamp(10vw, 55vw, 70vw);
 }
 
+#flexible-pricing-plan-section {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#flexible-pricing-plan-section h3 {
+  font-size: clamp(0.5em, 5.3vw, 2em);
+  font-weight: 800;
+  text-transform: capitalize;
+  margin: 1em 0 1em 0;
+  letter-spacing: -0.03em;
+}
+
+#flexible-pricing-plan-section h4 {
+  font-size: clamp(0.5em, 4.5vw, 1.5em);
+  color: #64607d;
+  letter-spacing: -0.02em;
+  font-weight: 500;
+  margin: 1.5em 0 1.5em 0;
+}
+
+.yellow-rectangle {
+  width: clamp(2em, 25vw, 8em);
+  height: clamp(2em, 25vw, 8em);
+  border-radius: 5%;
+  background-color: #ffd850;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#products-cards-section {
+  padding-left: 8.5%;
+  padding-right: 9%;
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.product-card h3 {
+  font-size: clamp(0.5em, 6vw, 2em);
+  text-transform: capitalize;
+  letter-spacing: -0.03em;
+  margin: 1em 0 0.5em 0;
+  font-weight: 800;
+}
+
+.product-card span {
+  font-size: clamp(0.5em, 5vw, 1.5em);
+  color: #64607d;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.5em;
+}
+
+.register-now-btn {
+  border: none;
+  font-weight: bold;
+  color: white;
+  background: #4f46ba;
+  padding: 0.7em 0 0.7em 0;
+  border-radius: 10px;
+  font-size: clamp(0.5em, 5vw, 1.5em);
+  width: 100%;
+  margin: 1em 0 1em 0;
+}
+
+.yellow-bg {
+  color: black;
+  background-color: #ffd850;
+}
+
+#purple-bg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #3734a9;
+  color: white;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding-top: 2em;
+  padding-left: 8.5%;
+  padding-right: 9%;
+  padding-bottom: 2em;
+}
+
+#purple-bg h3 {
+  text-align: center;
+  font-size: clamp(0.5em, 6.5vw, 2.5em);
+  margin: 0.5em 0 0.5em 0;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 140%;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+#bullet-points {
+  margin-top: 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#bullet-points h3 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(0.5em, 6.3vw, 2.5em);
+  line-height: 125%;
+  text-align: center;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.5em;
+}
+
+#bullet-points h4 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: clamp(0.5em, 4.35vw, 2.5em);
+  line-height: 171%;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #a0b3e9;
+  width: 80%;
+}
+
+.yellow-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5em;
+  border-radius: 50%;
+  background-color: #ffd850;
+  height: clamp(0.5em, 21vw, 8em);
+  width: clamp(0.5em, 21vw, 8em);
+}
+
+.yellow-circle h1 {
+  font-size: clamp(1em, 11.1vw, 5em);
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 70%;
+  letter-spacing: -0.02em;
+  color: #3734a9;
+}
+
+#yelow-bg-rect {
+  margin-top: 4em;
+  margin-bottom: 1em;
+  background-color: #ffd850;
+}
+
+#phone-in-hand-pic {
+  position: relative;
+  left: -1em;
+  top: -1em;
+}
+
+.register-now-paragraph {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: clamp(0.5em, 5.4vw, 2.5em);
+  line-height: 136%;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+#quick-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 8.5%;
+  padding-right: 9%;
+}
+
+#company-summ {
+  padding: 1em 0 1em 0;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#company-summ h2 {
+  margin-bottom: 0.5em;
+  font-family: "Roboto";
+  font-size: clamp(0.5em, 6vw, 3em);
+  font-style: normal;
+  font-weight: 400;
+  line-height: clamp(0.5em, 6vw, 3em);
+  font-feature-settings: "liga" off;
+}
+
+#company-summ span {
+  font-size: clamp(0.5em, 4.4vw, 3em);
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 139%;
+  text-align: center;
+  color: #333333;
+}
+
+.mini-nav {
+  text-align: center;
+  padding: 1em 0 1em 0;
+}
+
+.mini-nav h3 {
+  text-align: center;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(0.5em, 5vw, 3em);
+  line-height: 125%;
+  color: #000000;
+  margin-bottom: 0.5em;
+}
+
+.mini-nav ul {
+  font-size: clamp(0.5em, 4.5vw, 3em);
+  color: #757575;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 139%;
+  color: #757575;
+}
+
+#quick-cont {
+  padding: 1em 0 1em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#quick-cont h3 {
+  font-size: clamp(0.5em, 5vw, 3em);
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%;
+  color: #000000;
+  margin-bottom: 0.4em;
+}
+
+#quick-cont span {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 139%;
+  text-align: center;
+  color: #757575;
+  width: 60%;
+}
+
+#quick-cont h4 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: clamp(0.5em, 4.4vw, 3em);
+  line-height: 139%;
+  color: #3734a9;
+}
+
+#mail,
+#phone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #3734a9;
+}
+
+#phone {
+  margin: 1em 0 1em 0;
+}
+
+#phone-pic {
+  width: clamp(0.5em, 7vw, 3em);
+  margin-bottom: 0.5em;
+}
+
+#mail-pic {
+  width: fit-content;
+  height: fit-content;
+  margin-bottom: 0.5em;
+}
+
+#top-env {
+  width: clamp(0.5em, 8vw, 3em);
+  margin-bottom: clamp(-0.5em, -15vw, -5em);
+}
+
+#bott-env {
+  width: clamp(0.5em, 8vw, 3em);
+  margin-top: clamp(-0.5em, -15vw, -5em);
+}
+
+#address {
+  padding: 1em 0 1em 0;
+  text-align: center;
+}
+
+#address h3 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(0.5em, 5vw, 5em);
+  line-height: 125%;
+  color: #000000;
+  margin-bottom: 0.3em;
+}
+
+#address span {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(0.5em, 4.4vw, 3em);
+  line-height: 139%;
+  color: #757575;
+  width: 60%;
+}
+
+#city-silouete-pics {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: 5em;
+  height: clamp(0.5em, 20vw, 50vw);
+}
+
+footer {
+  font-family: "Poppins", sans-serif;
+  padding: 0.8em;
+  width: 100%;
+  color: #f2f3ff;
+  background: #000000;
+  text-align: center;
+}
+
+/* Media Queries  */
+
 @media (min-width: 1280px) {
+  #drawer-menu-pic {
+    display: none;
+  }
+}
+
+@media (min-width: 500px) {
+  #erafleet-title-pic {
+    height: clamp(1.5em, 2vw, 1.5em);
+  }
+}
+
+@media (min-width: 1280px) {
+  #sign-in {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar ul {
+    display: flex;
+    list-style: none;
+  }
+  .navbar li {
+    margin-right: 1em;
+  }
+  .navbar a {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 768px) {
+  #fleet-features-section {
+    flex-direction: row;
+    margin-left: 4.5em;
+  }
+  #fleet-features-section h2 {
+    margin-bottom: clamp(0.1em, 1vw, 1em);
+  }
+}
+
+/* @media (min-width: 1280px) {
   #iot-solutions {
     flex-direction: row;
   }
@@ -246,87 +615,7 @@
     height: clamp(10vw, 20vw, 70vw);
     z-index: 0;
   }
-}
 
-#flexible-pricing-plan-section {
-  margin-top: 1em;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-#flexible-pricing-plan-section h3 {
-  font-size: clamp(0.5em, 5.3vw, 2em);
-  font-weight: 800;
-  text-transform: capitalize;
-  margin: 1em 0 1em 0;
-  letter-spacing: -0.03em;
-}
-
-#flexible-pricing-plan-section h4 {
-  font-size: clamp(0.5em, 4.5vw, 1.5em);
-  color: #64607d;
-  letter-spacing: -0.02em;
-  font-weight: 500;
-  margin: 1.5em 0 1.5em 0;
-}
-
-.yellow-rectangle {
-  width: clamp(2em, 25vw, 8em);
-  height: clamp(2em, 25vw, 8em);
-  border-radius: 5%;
-  background-color: #ffd850;
-  align-self: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#products-cards-section {
-  border: 1px solid red;
-  padding-left: 8.5%;
-  padding-right: 9%;
-  margin-bottom: 1em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.product-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.product-card h3 {
-  font-size: clamp(0.5em, 6vw, 1.5em);
-}
-
-.product-card span {
-  width: 85%;
-  font-size: clamp(0.5em, 5vw, 1.5em);
-  color: #64607d;
-}
-
-.register-now-btn {
-  border: none;
-  font-weight: bold;
-  color: white;
-  background: #4f46ba;
-  padding: 0.7em 0 0.7em 0;
-  border-radius: 10px;
-  font-size: clamp(0.5em, 5vw, 1.5em);
-  width: 90%;
-  margin: 1em 0 1em 0;
-}
-
-.yellow-bg {
-  color: black;
-  background-color: #ffd850;
-}
-
-@media (min-width: 1280px) {
   #flexible-pricing-plan-section {
     margin-top: clamp(0.5em, 3vw, 2.5em);
     margin-left: clamp(2em, 10vw, 10em);
@@ -363,185 +652,4 @@
   #flexible-pricing-plan-section img {
     height: clamp(0.2em, 2vw, 5em);
   }
-}
-
-@media (min-width: 1280px) {
-  #cards {
-    display: flex;
-  }
-
-  .card {
-    margin: 1em 0.5em 0 0.5em;
-    box-shadow: 0px 141.825px 113.46px rgba(0, 0, 0, 0.03),
-      0px 91.9235px 66.4476px rgba(0, 0, 0, 0.0227778),
-      0px 54.6288px 36.1391px rgba(0, 0, 0, 0.0182222),
-      0px 28.365px 18.4372px rgba(0, 0, 0, 0.015),
-      0px 11.5561px 9.24488px rgba(0, 0, 0, 0.0117778),
-      0px 2.62639px 4.46486px rgba(0, 0, 0, 0.00722222);
-    border-radius: 20px;
-  }
-}
-
-#purple-bg {
-  background-color: #3734a9;
-  color: white;
-  margin-top: 2em;
-  margin-bottom: 2em;
-  padding-top: 2em;
-}
-
-#purple-bg h2 {
-  font-size: clamp(0.5em, 6vw, 2.5em);
-  margin: 0;
-  width: 85%;
-  font-weight: 500;
-}
-
-#purple-bg h3 {
-  width: 85%;
-  font-size: clamp(0.5em, 6.5vw, 2.5em);
-  margin: 0.5em 0 0.5em 0;
-}
-
-#purple-bg h4 {
-  width: 70%;
-  margin-bottom: 1em;
-}
-
-#purple-bg span {
-  font-size: clamp(0.5em, 5.7vw, 2.5em);
-  font-weight: 500;
-  letter-spacing: -0.02em;
-  margin: 1em 1em;
-}
-
-.yellow-circle {
-  margin-top: 0.5em;
-  padding: clamp(1em, 25vw, 5em);
-  border-radius: 50%;
-  background-color: #ffd850;
-  height: clamp(1em, 8vw, 5em);
-  width: clamp(1em, 8vw, 5em);
-}
-
-.yellow-circle h1 {
-  color: #3734a9;
-  font-size: clamp(1em, 13vw, 5em);
-  font-weight: 700;
-}
-
-#yelow-bg-rect {
-  margin-top: 1.5em;
-  margin-bottom: 1em;
-  background-color: #ffd850;
-}
-
-#phone-in-hand-pic {
-  position: relative;
-  left: -1em;
-  top: -1em;
-}
-
-@media (min-width: 1280px) {
-}
-
-#erafleet {
-  margin-top: 2em;
-  width: fit-content;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#erafleet h2 {
-  font-family: "Roboto";
-  font-size: clamp(0.5em, 6vw, 3em);
-  font-weight: 400;
-}
-
-#erafleet span {
-  font-size: clamp(0.5em, 4.4vw, 3em);
-  font-weight: 400;
-  margin-bottom: 1em;
-}
-
-.quick-menu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-
-.quick-menu ul {
-  font-size: clamp(0.5em, 4.5vw, 3em);
-  font-weight: 400;
-  color: #757575;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.quick-menu h3 {
-  font-size: clamp(0.5em, 5vw, 3em);
-}
-
-.quick-menu span {
-  font-size: clamp(0.5em, 4.4vw, 3em);
-  font-weight: 400;
-  color: #757575;
-}
-
-#mail,
-#phone {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #3734a9;
-}
-
-#mail h3,
-#phone h3 {
-  margin-top: 0.5em;
-  font-weight: 500;
-}
-
-#phone {
-  margin: 1em 0 1em 0;
-}
-
-#phone-pic {
-  width: clamp(0.5em, 7vw, 3em);
-}
-
-#mail-pic {
-  width: fit-content;
-  height: fit-content;
-}
-
-#top-env {
-  width: clamp(0.5em, 8vw, 3em);
-  margin-bottom: clamp(-0.5em, -15vw, -5em);
-}
-
-#bott-env {
-  width: clamp(0.5em, 8vw, 3em);
-  margin-top: clamp(-0.5em, -15vw, -5em);
-}
-
-#city-silouete-pics {
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
-  margin-top: 5em;
-  height: clamp(0.5em, 20vw, 50vw);
-}
-
-footer {
-  font-family: "Poppins", sans-serif;
-  padding: 0.8em;
-  width: 100%;
-  color: #f2f3ff;
-  background: #000000;
-}
+} */

@@ -36,7 +36,7 @@ const homepage = () => {
               <a>Contact us</a>
             </li>
           </ul>
-          <div>
+          <div id="sign-in">
             <a>Sign in</a>
             <button className="start-free-btn">Start Free</button>
           </div>
@@ -111,7 +111,7 @@ const homepage = () => {
           <span className="text-center">
             €0.16 per connected device/1-day from the 3rd month
           </span>
-          <br />
+          
           <span>
             2 months of free service for an unlimited number of devices
             <br />
@@ -123,12 +123,10 @@ const homepage = () => {
         <div className="product-card">
           <h3>Monthly Cap</h3>
           <span className="text-center">
-            Monthly cap – €4.00 per connected device
+            Monthly cap – €4.00 per <br/> connected device
           </span>
-          <br />
           <span>
-            2 months of free service for an unlimited number of devices
-            <br />
+            2 months of free service for an unlimited number of devices<br/>
             <b>Cancel at Anytime</b>
           </span>
           <button className="register-now-btn">Register Now</button>
@@ -141,7 +139,7 @@ const homepage = () => {
           by generating customizable fleet reports and analytics.
         </h3>
         <div>
-          <div>
+          <div id="bullet-points">
             <div className="yellow-circle ">
               <h1>1</h1>
             </div>
@@ -153,7 +151,7 @@ const homepage = () => {
             </h4>
           </div>
 
-          <div>
+          <div id="bullet-points">
             <div className="yellow-circle">
               <h1>2</h1>
             </div>
@@ -165,7 +163,7 @@ const homepage = () => {
             </h4>
           </div>
 
-          <div>
+          <div id="bullet-points">
             <div className="yellow-circle">
               <h1>3</h1>
             </div>
@@ -181,18 +179,18 @@ const homepage = () => {
         <div id="yelow-bg-rect">
           <img id="phone-in-hand-pic" src={PhoneInHandPic} />
         </div>
-        <span className="capt wd-90">
+        <span className="register-now-paragraph">
           Join our platform today and benefit from 2 months of free service for
           an unlimited number of devices.
         </span>
         <button className="register-now-btn yellow-bg">Register Now</button>
-        <span className="wd-90 capt">
+        <span className="register-now-paragraph">
           Connect with us to receive a special offer tailored to your business
           needs.
         </span>
       </section>
-      <section id="quck-menu" className="flex-colunm-center">
-        <div id="erafleet">
+      <section id="quick-menu">
+        <div id="company-summ">
           <h2>Erafleet</h2>
           <span className="wd-90 text-center">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -200,7 +198,7 @@ const homepage = () => {
             ad minim.
           </span>
         </div>
-        <div className="quick-menu">
+        <div className="mini-nav">
           <h3>Menu</h3>
           <ul className="text-center">
             <li>
@@ -218,7 +216,7 @@ const homepage = () => {
           </ul>
         </div>
 
-        <div className="quick-menu">
+        <div id="quick-cont">
           <h3>Quick Contact</h3>
           <span className="wd-50 text-center">
             If you have any questions or need help, feel free to contact with
@@ -226,20 +224,20 @@ const homepage = () => {
           </span>
           <div id="phone">
             <img id="phone-pic" src={PhonePic} />
-            <h3>+(44) 123-4567</h3>
+            <h4>+(44) 123-4567</h4>
           </div>
           <div id="mail">
             <div id="mail-pic">
               <img id="top-env" src={EnvelopeTopPic} />
               <img id="bott-env" src={EnvelopeBottomPic} />
             </div>
-            <h3>hello@loopnotluck.com</h3>
+            <h4>hello@loopnotluck.com</h4>
           </div>
         </div>
-        <div className="quick-menu">
+        <div id="address">
           <h3>Address</h3>
-          <span className="wd-50 text-center">
-            63-66 Hatton Garden, 5th Floor Suite 23, London,
+          <span>
+            63-66 Hatton Garden,<br/> 5th Floor Suite 23,<br/> London,
             <br /> EC1N 8LE
           </span>
         </div>
@@ -248,7 +246,7 @@ const homepage = () => {
         <img src={CityRightPic} />
         <img src={CityLeftPic} />
       </div>
-      <footer className="text-center">
+      <footer>
         <span>© Erafleet 2022. All rights reserved.</span>
       </footer>
     </div>
