@@ -9,10 +9,10 @@
 }
 
 .header {
-  padding-top: clamp(0.5em, 2vw, 3em);
+  padding-top: clamp(0.5em, 3vw, 2em);
   padding-bottom: clamp(0.5em, 2vw, 3em);
-  padding-left: clamp(0.5em, 9vw, 5em);
-  padding-right: clamp(0.5em, 9vw, 5em);
+  padding-left: 8.5%;
+  padding-right: 9%;
   width: 100%;
   max-width: 100%;
   height: fit-content;
@@ -26,8 +26,8 @@
 }
 
 #erafleet-title-pic {
-  height: clamp(4.5vw, 4.5vw, 1.5em);
-  margin-left: 3.2em;
+  height: clamp(0.5em, 4vw, 2em);
+  margin-left: clamp(0.5em, 9vw, 4em);
 }
 
 .navbar {
@@ -35,7 +35,6 @@
   color: white;
   justify-content: space-between;
   align-items: center;
-  margin-top: 0.5em;
 }
 
 .navbar ul,
@@ -87,7 +86,7 @@
 }
 
 #fleet-features-section h2 {
-  font-size: clamp(1em, 6.5vw, 3.8em);
+  font-size: clamp(0.5em, 6.3vw, 3.8em);
   font-weight: 800;
   letter-spacing: -0.03em;
 }
@@ -529,7 +528,7 @@ footer {
 
 /* Media Queries  */
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   #drawer-menu-pic {
     display: none;
   }
@@ -537,11 +536,14 @@ footer {
 
 @media (min-width: 500px) {
   #erafleet-title-pic {
-    height: clamp(1.5em, 2vw, 1.5em);
+    height: clamp(1em, 1.5vw, 2em);
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
+  #erafleet-title-pic {
+    margin: 0;
+  }
   #sign-in {
     display: flex;
     align-items: center;
@@ -552,55 +554,59 @@ footer {
     list-style: none;
   }
   .navbar li {
-    margin-right: 1em;
+    margin-right: clamp(1em, 2vw, 3em);
   }
   .navbar a {
     display: inline-block;
+    font-size: clamp(1em, 1.2vw, 1.7em);
   }
 }
 
 @media (min-width: 768px) {
   #fleet-features-section {
     flex-direction: row;
-    margin-left: 4.5em;
   }
   #fleet-features-section h2 {
     margin-bottom: clamp(0.1em, 1vw, 1em);
   }
+
+  #fleet-features-section .feature-list span {
+    font-size: clamp(0.5em, 1.78vw, 0.9em);
+    line-height: 60%;
+  }
+
+  .feature-list li {
+    margin-bottom: clamp(0.5em, 7vw, 1.5em);
+  }
 }
 
-/* @media (min-width: 1280px) {
-  #iot-solutions {
+@media (min-width: 1000px) {
+  #iot-solutions-section {
     flex-direction: row;
   }
 
-  #iot-solutions-paragraph {
-    align-items: flex-start;
-    margin-left: clamp(2em, 10vw, 10em);
+  #iot-solutions-text-wrapper {
     width: fit-content;
+    text-align: left;
   }
 
-  #iot-solutions span {
-    text-align: left;
-    font-size: clamp(0.5em, 1.2vw, 2em) !important;
-    line-height: clamp(0.5em, 1.5vw, 2em) !important;
-    width: 80%;
+  #iot-solutions-section h3 {
+    width: 110%;
+    font-size: clamp(0.5em, 3.13vw, 3.5em);
+    line-height: clamp(0.5em, 2.8vw, 3.5em);
   }
 
-  #iot-solutions h3 {
-    width: 80%;
-    font-size: clamp(0.5em, 3vw, 5em);
-    text-align: left;
-    margin: 1em 0 clamp(0.5em, 2vw, 5em) 0;
-    line-height: clamp(0.5em, 3vw, 5em);
+  #iot-solutions-paragraph {
+    font-weight: 500;
+    font-size: clamp(0.5em, 1.25vw, 2em);
+    line-height: clamp(1.5em, 1.5vw, 2em);
+    color: #0d0d0d;
   }
 
   #iot-solutions-pics {
     width: 85%;
     position: relative;
-    margin-left: -20em;
-    margin-top: clamp(3em, 8vw, 5em);
-    margin-bottom: 0;
+    margin-top: clamp(3em, 6vw, 6em);
   }
 
   #iot-solutions-pics__cars-on-map {
@@ -617,16 +623,13 @@ footer {
   }
 
   #flexible-pricing-plan-section {
-    margin-top: clamp(0.5em, 3vw, 2.5em);
-    margin-left: clamp(2em, 10vw, 10em);
-    margin-right: clamp(2em, 3vw, 10em);
-    padding-top: clamp(1em, 1vw, 4em);
-    padding-bottom: clamp(1em, 1vw, 4em);
-    padding-left: clamp(1em, 2.5vw, 4em);
     flex-direction: row;
-    justify-self: start;
+    align-items: center;
     border: 1px solid #dee1e6;
-    border-radius: 10px;
+    margin-left: 8.5%;
+    margin-right: 9%;
+    border-radius: 20px;
+    padding: 1em 0.5em 1em 2em;
   }
 
   #flexible-pricing-plan-section h3 {
@@ -652,4 +655,37 @@ footer {
   #flexible-pricing-plan-section img {
     height: clamp(0.2em, 2vw, 5em);
   }
-} */
+
+  #products-cards-section {
+    padding: 0;
+    flex-direction: row;
+    margin-left: 8.5%;
+    margin-right: 9%;
+    justify-content: space-between !important;
+  }
+
+  .product-card {
+    box-shadow: 0px 141.825px 113.46px rgba(0, 0, 0, 0.03),
+      0px 91.9235px 66.4476px rgba(0, 0, 0, 0.0227778),
+      0px 54.6288px 36.1391px rgba(0, 0, 0, 0.0182222),
+      0px 28.365px 18.4372px rgba(0, 0, 0, 0.015),
+      0px 11.5561px 9.24488px rgba(0, 0, 0, 0.0117778),
+      0px 2.62639px 4.46486px rgba(0, 0, 0, 0.00722222);
+    border-radius: 20px;
+    width: 49%;
+    padding: 1em 2em 1em 2em;
+  }
+
+  .product-card .register-now-btn {
+    width: fit-content;
+    font-weight: 500;
+    font-size: clamp(0.1em, 1.3vw, 1.3em);
+    line-height: clamp(0.1em, 1.3vw, 1.3em);
+    padding: 1em 2em 1em 2em;
+  }
+
+  .product-card h3 {
+      margin-bottom: 1.3em;
+      font-size: clamp(0.1em, 2.8vw, 3em);
+  }
+}

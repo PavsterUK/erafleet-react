@@ -33,7 +33,7 @@ const homepage = () => {
               <a>Price</a>
             </li>
             <li>
-              <a>Contact us</a>
+              <a>Contact</a>
             </li>
           </ul>
           <div id="sign-in">
@@ -76,9 +76,9 @@ const homepage = () => {
           </h3>
           <span id="iot-solutions-paragraph">
             Individuals and businesses of various sizes operating in logistics,
-            insurance, car hire and other transport related sectors can benefit
-            from our user-friendly tracking dashboard fed by GPS tracking
-            devices and telematic control units of their choice. <br />
+            insurance, car hire and other transport related sectors can benefit 
+            from our user-friendly tracking dashboard fed by GPS Tracking
+            devices and telematic control units of their choice. 
             <br />
             Enhanced vehicle tracking allows reduced operational costs, improved
             business agility, vehicle maintenance and employee safety.
@@ -123,7 +123,7 @@ const homepage = () => {
         <div className="product-card">
           <h3>Monthly Cap</h3>
           <span className="text-center">
-            Monthly cap – €4.00 per <br/> connected device
+            Monthly cap – €4.00 per connected device
           </span>
           <span>
             2 months of free service for an unlimited number of devices<br/>
