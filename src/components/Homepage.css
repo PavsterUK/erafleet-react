@@ -530,6 +530,8 @@ footer {
 
 /* Media Queries  */
 
+
+
 @media (min-width: 1000px) {
   #drawer-menu-pic {
     display: none;
