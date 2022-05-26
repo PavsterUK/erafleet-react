@@ -5,8 +5,11 @@ import CityRoadTimelapsePic from "../images/features/city-road-timelapse.jpg";
 import AnalyticsPic from "../images/features/analytics.svg";
 import LocationsPic from "../images/features/locations-connected.svg";
 import LadyWithPhonePic from "../images/features/lady-holds-phone.png";
-import "./Features.css";
 import CircleWithNumber from "./GUI/CircleWithNumber";
+import DevicesPics from "../images/features/tracker-devices.svg";
+import WavyGreyBg from "../images/features/wavy-grey-bg.jpg";
+import { DEVICES } from "./DeviceList";
+import DeviceCell from "./DeviceCell";
 
 const Features = () => {
   return (
@@ -117,7 +120,54 @@ const Features = () => {
           </span>
         </div>
 
-        <img src={LocationsPic}/>
+        <img src={LocationsPic} />
+      </section>
+
+      <section id="e-garage">
+        <h2>E-garage</h2>
+        <span>
+          Another productive way to optimize a transport-related business is an
+          automated schedule of vehicle maintenance. Managing such a schedule
+          requires a minimal amount of administrative efforts but can lead to
+          reduced losses and costs.
+          <br />
+          <br /> E-garage features two sections useful to an efficiency-oriented
+          transport manager:
+          <br />
+          <br /> • A tab of automated notifications fed by the tracking devices
+          installed in the vehicles. For example, if the device detects that the
+          vehicle has a system error or fault, EraFleet system generates a
+          garage message and sends an email informing the user of the current
+          fault.
+          <br />
+          <br /> • A tab of events displaying a list of unique instances created
+          by the user who can either close, edit or add new ones. For example,
+          if a vehicle should have the oil changed after travelling a certain
+          number of kilometers (or on a specific day), the user creates a
+          unique, descriptive event selecting either a date or odometer as a
+          trigger for an email notification.
+        </span>
+      </section>
+
+      <section id="teltonica">
+        <div
+          id="devices-pics"
+          style={{ backgroundImage: `url(${WavyGreyBg})` }}
+        >
+          <h2>Teltonica</h2>
+          <span>
+            Small and smart tracker with Bluetooth and internal backup battery
+          </span>
+          <img src={DevicesPics} />
+        </div>
+        <div id="supported-devices">
+          <h2>Supported devices by teltonika</h2>
+        </div>
+        <div id="device-list"> 
+          {DEVICES.map((device) => {
+            return <DeviceCell id={device.id}/>
+          })}
+        </div>
       </section>
     </div>
   );
