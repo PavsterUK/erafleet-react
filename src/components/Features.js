@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Features.css";
 import Header from "./Layout/Header";
 import CityRoadTimelapsePic from "../images/features/city-road-timelapse.jpg";
@@ -9,9 +9,18 @@ import CircleWithNumber from "./GUI/CircleWithNumber";
 import DevicesPics from "../images/features/tracker-devices.svg";
 import WavyGreyBg from "../images/features/wavy-grey-bg.jpg";
 import { DEVICES } from "./DeviceList";
-import DeviceCell from "./DeviceCell";
+import Device from "./Device";
+import MiniSiteMap from "./Layout/MiniSiteMap";
+import Footer from "./Layout/Footer";
+import RegisterNowBtn from "./GUI/RegisterNowBtn";
 
 const Features = () => {
+  const [deviceListOpen, setDeviceListOpen] = useState(false);
+
+  const toggleList = () => {
+    setDeviceListOpen(!deviceListOpen);
+  };
+
   return (
     <div className="features-container">
       <Header bgImg={CityRoadTimelapsePic}>
@@ -163,12 +172,33 @@ const Features = () => {
         <div id="supported-devices">
           <h2>Supported devices by teltonika</h2>
         </div>
-        <div id="device-list"> 
-          {DEVICES.map((device) => {
-            return <DeviceCell id={device.id}/>
+        <div id="device-list">
+          {DEVICES.map((device, i) => {
+            if (!deviceListOpen && i < 14) {
+              return <Device id={device.id} />; //Show first 14 devices
+            } else if (deviceListOpen) {
+              return <Device id={device.id} />; //Show all devices
+            }
           })}
         </div>
+        <button id="toggle-device-list" onClick={() => toggleList()}>
+          Load more devices
+        </button>
       </section>
+      <div id="register-now">
+        <h2 style={{ color: "#3734A9" }}>
+          Haven’t found the feature you need?
+        </h2>
+
+        <RegisterNowBtn bgColor={"#FFD850"} />
+
+        <h2>
+          Connect with us to receive a special offer tailored to your business
+          needs.
+        </h2>
+      </div>
+      <MiniSiteMap />
+      <Footer />
     </div>
   );
 };
