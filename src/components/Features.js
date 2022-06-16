@@ -6,8 +6,7 @@ import AnalyticsPic from "../images/features/analytics.svg";
 import LocationsPic from "../images/features/locations-connected.svg";
 import LadyWithPhonePic from "../images/features/lady-holds-phone.png";
 import CircleWithNumber from "./GUI/CircleWithNumber";
-import DevicesPics from "../images/features/tracker-devices.svg";
-import WavyGreyBg from "../images/features/wavy-grey-bg.jpg";
+import TrackingDevicesPic from "./../images/features/teltonica-devices.svg";
 import { DEVICES } from "./DeviceList";
 import Device from "./Device";
 import MiniSiteMap from "./Layout/MiniSiteMap";
@@ -20,6 +19,14 @@ const Features = () => {
   const toggleList = () => {
     setDeviceListOpen(!deviceListOpen);
   };
+
+  const deviceList = DEVICES.map((device, i) => {
+    if (!deviceListOpen && i < 14) {
+      return <Device id={device.id} />; //Show first 14 devices
+    } else if (deviceListOpen) {
+      return <Device id={device.id} />; //Show all devices
+    }
+  });
 
   return (
     <div className="features-container">
@@ -161,25 +168,19 @@ const Features = () => {
       <section id="teltonica">
         <div
           id="devices-pics"
-          style={{ backgroundImage: `url(${WavyGreyBg})` }}
+          
         >
           <h2>Teltonica</h2>
           <span>
             Small and smart tracker with Bluetooth and internal backup battery
           </span>
-          <img src={DevicesPics} />
+          <img src={TrackingDevicesPic} />
         </div>
         <div id="supported-devices">
           <h2>Supported devices by teltonika</h2>
         </div>
         <div id="device-list">
-          {DEVICES.map((device, i) => {
-            if (!deviceListOpen && i < 14) {
-              return <Device id={device.id} />; //Show first 14 devices
-            } else if (deviceListOpen) {
-              return <Device id={device.id} />; //Show all devices
-            }
-          })}
+          {deviceList}
         </div>
         <button id="toggle-device-list" onClick={() => toggleList()}>
           Load more devices

@@ -190,11 +190,40 @@
   font-weight: 400;
   font-size: clamp(0.5em, 3.62vw, 2em);
   line-height: 157%;
+  margin-bottom: 3em;
 }
 #teltonica {
+  position: relative;
+  margin-top: 3em;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#devices-pics {
+  max-width: 100vw;
+}
+
+
+
+#devices-pics span {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 179%;
+}
+
+#devices-pics img {
+  width: 100%;
+}
+
+#devices-pics h2 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 22px;
 }
 
 #supported-devices {
@@ -202,9 +231,18 @@
   padding-right: 9%;
 }
 
+#supported-devices h2 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 106%;
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 2em;;
+}
+
 #device-list {
-  padding-left: 8.5%;
-  padding-right: 9%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 0.5em;
@@ -215,6 +253,7 @@
   font-family: "Manrope";
   font-style: normal;
   margin-top: 2em;
+  margin-bottom: 2em;
   padding: 0.5em 1.5em 0.5em 1.5em;
   font-weight: 800;
   font-size: 22px;
@@ -237,9 +276,10 @@
   font-style: normal;
   font-weight: 500;
   font-size: 22px;
-  line-height: 30px;
-  /* or 136% */
-
+  line-height: 136%;
   text-align: center;
   text-transform: capitalize;
+  width: 80%;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
