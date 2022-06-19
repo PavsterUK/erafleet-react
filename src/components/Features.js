@@ -6,7 +6,9 @@ import AnalyticsPic from "../images/features/analytics.svg";
 import LocationsPic from "../images/features/locations-connected.svg";
 import LadyWithPhonePic from "../images/features/lady-holds-phone.png";
 import CircleWithNumber from "./GUI/CircleWithNumber";
-import TrackingDevicesPic from "./../images/features/teltonica-devices.svg";
+import WavyGreyBgPic from "../images/features/wavy-grey-bg.svg";
+import TrackingDevicesPics from "../images/features/tracking-devices.svg";
+import YellowPartialCirclePic from "../images/features/yellow-partial-circle.svg";
 import { DEVICES } from "./DeviceList";
 import Device from "./Device";
 import MiniSiteMap from "./Layout/MiniSiteMap";
@@ -166,22 +168,21 @@ const Features = () => {
       </section>
 
       <section id="teltonica">
-        <div
-          id="devices-pics"
-          
-        >
-          <h2>Teltonica</h2>
-          <span>
-            Small and smart tracker with Bluetooth and internal backup battery
-          </span>
-          <img src={TrackingDevicesPic} />
+        <div id="devices-pics" style={{backgroundImage: `url(${WavyGreyBgPic})`}}>
+          <div id="devices-pics-text">
+            <h2>Teltonica</h2>
+            <span>
+              Small and smart tracker with Bluetooth and internal backup battery
+            </span>
+          </div>
+
+          <img src={YellowPartialCirclePic} />
+          <img id="tracking-devices-pics" src={TrackingDevicesPics} />
         </div>
         <div id="supported-devices">
           <h2>Supported devices by teltonika</h2>
         </div>
-        <div id="device-list">
-          {deviceList}
-        </div>
+        <div id="device-list">{deviceList}</div>
         <button id="toggle-device-list" onClick={() => toggleList()}>
           Load more devices
         </button>
