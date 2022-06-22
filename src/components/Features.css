@@ -301,7 +301,7 @@
     font-family: "Manrope";
     font-style: normal;
     font-weight: 800;
-    font-size: clamp(0.5em, 4.1vw, 6em);
+    font-size: clamp(0.5em, calc(3.3vw + 1em), 4em);
     line-height: 125%;
     width: 60%;
   }
@@ -310,6 +310,5 @@
     font-size: clamp(0.5em, 1.74vw, 3em);
     line-height: clamp(0.5em, 2.4vw, 3em);
     width: 85%;
-    
   }
 }

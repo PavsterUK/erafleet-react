@@ -34,7 +34,7 @@ const Features = () => {
     <div className="features-container">
       <Header bgImg={CityRoadTimelapsePic}>
         <section id="features-header-title">
-          <h1>Intelligent Features of EraFleet dashboard</h1>
+          <h1>Intelligent Features of <br/>EraFleet dashboard</h1>
           <span>
             Registered users get instant access to the user-friendly,
             easy-to-use tracking dashboard featuring real-time monitoring,
