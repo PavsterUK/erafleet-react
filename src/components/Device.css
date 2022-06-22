@@ -1,0 +1,19 @@
+#device-cell {
+  background: #ededed;
+  border: 0.881612px solid #cac0c0;
+  border-radius: 3.52645px;
+  width: 172.8px;
+  height: 40.55px;
+}
+
+#device-cell span {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 15.869px;
+  line-height: 194%;
+  text-transform: capitalize;
+}
